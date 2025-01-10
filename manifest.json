@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Media Link Extractor -kn",
+  "version": "1.0",
+  "description": "Extract media links from webpages. This extension is a fork of the original Media Link Extractor extension. This extension extracts media links from webpages and displays them in a list. You can copy the links to the clipboard or open them in a new tab. The extension supports various media types, including images, videos, audio files, and more.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
