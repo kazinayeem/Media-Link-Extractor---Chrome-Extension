@@ -22,14 +22,18 @@ A **Chrome Extension** that extracts and displays all image and video links from
 
 
 
-media-link-extractor/
-├── icons/                  # Contains extension icons (16x16, 48x48, 128x128)
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
-├── content.js               # Script injected into the webpage to fetch media links
-├── popup.html               # Popup UI for the extension
-├── popup.js                 # Handles popup actions and displays media links
+media-link-extractor:
+  icons:                    # Contains extension icons (16x16, 48x48, 128x128)
+    - icon16.png
+    - icon48.png
+    - icon128.png
+  content.js:                # Script injected into the webpage to fetch media links
+  popup.html:                # Popup UI for the extension
+  popup.js:                  # Handles popup actions and displays media links
+  styles.css:                # Stylesheet for the popup
+  manifest.json:             # Extension configuration file
+  README.md:                 # Documentation for the extension
+
 ├── styles.css               # Stylesheet for the popup
 ├── manifest.json            # Extension configuration file
 └── README.md                # Documentation for the extension
